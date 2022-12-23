@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: terroir-tracking-web
   description: Find where your juice comes from
+  annotations:
+    # instanceName and github-organization-project-name are optional. The value is a string and should be enclosed in double quotes ""
+    jenkins.io/job-full-name: "instanceName:test"
 spec:
   type: website
   lifecycle: production
