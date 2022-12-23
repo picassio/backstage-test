@@ -2,10 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: terroir-tracking-web
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
   description: Find where your juice comes from
   annotations:
     # instanceName and github-organization-project-name are optional. The value is a string and should be enclosed in double quotes ""
     jenkins.io/job-full-name: "instanceName:test"
+    backstage.io/techdocs-ref: value
 spec:
   type: website
   lifecycle: production
